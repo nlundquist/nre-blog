@@ -1,8 +1,10 @@
 ---
-title: "Introduction to Network Reliability Engineering"
-type: "post"
+title: Introduction to Network Reliability Engineering
+type: post
 ---
 As systems grow, they tend to grow increasingly complex, brittle and unstable. Networks are at the core of modern information systems, and data proliferation is driving ever greater demands for system scale. Research has shown that human factors surrounding the network--from engineer training and education to the number of devices assigned per engineer--contribute heavily to network reliability. 
+
+Oh nooooo what's gonna happen.
 
 The concept of Site Reliability Engineering--described as a form of Devops with idiosyncratic extensions--was coined at Google to emphasize stability, scale and other aspects of reliability in releasing new builds to production. Network Reliability Engineering (NRE) incorporates SRE practices and behaviors to build, test, and operate a network pipeline. Network automation is the application of automation tools and scripts to that pipeline, ensuring repeatability and operational scale. Network automation is a critical element of NRE. 
 
