@@ -1,16 +1,17 @@
 ---
-date: 2018-11-14T00:00:00-00:00
+title: How NRE Labs Implements "Curriculum-as-Code"
+date: 2018-11-14T00:00:00.000Z
 description: Applying automation principles to educational content.
-featured_image: "https://networkreliability.engineering/images/code.jpg"
+featured_image: 'https://networkreliability.engineering/images/code.jpg'
 tags: []
-title: 'How NRE Labs Implements "Curriculum-as-Code"'
 show_reading_time: true
 authors:
-- name: Matt Oswalt
-  link: https://twitter.com/mierdin
+  - link: 'https://twitter.com/mierdin'
+    name: Matt Oswalt
 ---
-
 When we launched [NRE Labs](https://forums.juniper.net/t5/Enterprise-Cloud-and/Introducing-NRE-Labs/ba-p/381850) last month, the feedback was very positive. While it’s still early, we’re really excited about the momentum that’s already building toward building a community around a comprehensive set of automation workflows represented as simple lessons in the browser.
+
+This makes things much easier.
 
 On the [latest Packet Pushers Priority Queue episode](https://packetpushers.net/podcast/pq-158-introducing-nre-labs-for-network-automation-training/), Derick and I shared how NRE Labs is powered by 100% open-source software, ranging from off-the-shelf software we used for the solution, such as Kubernetes and Apache Guacamole, as well as custom-built software under the [Antidote project](https://github.com/nre-learning/antidote).
 
@@ -26,8 +27,8 @@ In order to understand how we’ve codified our automation curriculum, we first 
 
 In short:
 
-- **Antidote-web** is the web front-end that contains the lesson guide, the guacamole terminal, embedded web resources, and anything else that the lesson is trying to show.
-- **Syringe** is the back-end component that orchestrates the creation of resources inside Kubernetes. It publishes its own REST API and Antidote-web uses this to instruct Syringe to create a new lesson, among other things.
+* **Antidote-web** is the web front-end that contains the lesson guide, the guacamole terminal, embedded web resources, and anything else that the lesson is trying to show.
+* **Syringe** is the back-end component that orchestrates the creation of resources inside Kubernetes. It publishes its own REST API and Antidote-web uses this to instruct Syringe to create a new lesson, among other things.
 
 It’s important to understand that there are no lessons built into either Antidote-web or Syringe. They are both populated with content found elsewhere.
 
